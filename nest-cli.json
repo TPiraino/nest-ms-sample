@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/nexus-gateway/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/nexus-gateway/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/nexus-gateway",
+  "projects": {
+    "nexus-gateway": {
+      "type": "application",
+      "root": "apps/nexus-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/nexus-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nexus-gateway/tsconfig.app.json"
+      }
+    },
+    "ms1": {
+      "type": "application",
+      "root": "apps/ms1",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms1/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms1/tsconfig.app.json"
+      }
+    },
+    "ms2": {
+      "type": "application",
+      "root": "apps/ms2",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms2/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms2/tsconfig.app.json"
+      }
+    },
+    "ms3": {
+      "type": "application",
+      "root": "apps/ms3",
+      "entryFile": "main",
+      "sourceRoot": "apps/ms3/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ms3/tsconfig.app.json"
+      }
+    }
+  }
+}
