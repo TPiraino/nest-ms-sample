@@ -1,3 +1,3 @@
 export const MS3_PATERNS = {
-  FIND_ALL: 'ms1.findAll',
+  FIND_ALL: 'ms3.findAll',
 };

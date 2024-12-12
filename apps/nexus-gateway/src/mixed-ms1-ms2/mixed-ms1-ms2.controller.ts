@@ -8,7 +8,6 @@ export class MixedMs1Ms2Controller {
   @Get()
   findAll() {
     const res = this.mixedMs1Ms2Service.findAll();
-    console.log(res);
     return res;
   }
 }

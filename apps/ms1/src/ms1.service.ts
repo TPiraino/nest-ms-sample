@@ -1,5 +1,5 @@
+import { Ms1ExampleDto } from '@app/contracts';
 import { Injectable } from '@nestjs/common';
-import { Ms1ExampleDto } from './dto/ms1-example.dto';
 
 @Injectable()
 export class Ms1Service {
