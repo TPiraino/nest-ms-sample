@@ -10,11 +10,11 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         name: 'MS2',
         transport: Transport.TCP,
         options: { port: 3002 },
-      }
-    ])
+      },
+    ]),
   ],
   controllers: [Ms2Controller],
   providers: [Ms2Service],
-  exports: [Ms2Service]
+  exports: [Ms2Service],
 })
 export class Ms2Module {}

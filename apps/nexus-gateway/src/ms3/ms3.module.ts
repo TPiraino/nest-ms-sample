@@ -10,8 +10,8 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
         name: 'MS3',
         transport: Transport.TCP,
         options: { port: 3003 },
-      }
-    ])
+      },
+    ]),
   ],
   controllers: [Ms3Controller],
   providers: [Ms3Service],

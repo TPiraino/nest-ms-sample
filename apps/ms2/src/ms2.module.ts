@@ -7,4 +7,3 @@ import { Ms2Service } from './ms2.service';
   providers: [Ms2Service],
 })
 export class Ms2Module {}
- 

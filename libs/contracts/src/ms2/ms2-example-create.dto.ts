@@ -1,4 +1,4 @@
 export class Ms2ExampleCreateDto {
-    title: string
-    release: Date
+  title: string;
+  release: Date;
 }

@@ -7,13 +7,13 @@ import { forkJoin } from 'rxjs';
 export class MixedMs1Ms2Service {
   constructor(
     private readonly ms1Service: Ms1Service,
-    private readonly ms2Service: Ms2Service
+    private readonly ms2Service: Ms2Service,
   ) {}
 
   findAll() {
     return forkJoin({
       ms1: this.ms1Service.findAll(),
-      ms2: this.ms2Service.findAll()
+      ms2: this.ms2Service.findAll(),
     });
   }
 }
