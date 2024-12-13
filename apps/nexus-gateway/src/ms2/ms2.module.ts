@@ -2,12 +2,13 @@ import { Module } from '@nestjs/common';
 import { Ms2Service } from './ms2.service';
 import { Ms2Controller } from './ms2.controller';
 import { ClientsModule, Transport } from '@nestjs/microservices';
+import { MS2 } from '../constant';
 
 @Module({
   imports: [
     ClientsModule.register([
       {
-        name: 'MS2',
+        name: MS2,
         transport: Transport.TCP,
         options: { port: 3002 },
       },
